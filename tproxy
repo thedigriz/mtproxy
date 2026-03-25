@@ -1,0 +1,4 @@
+#!/bin/bash
+PORT=${1:-9050}
+CONTROL_PORT=${2:-8118}
+sudo docker run -it -p $CONTROL_PORT:8118 -p $PORT:9050 -d dperson/torproxy
